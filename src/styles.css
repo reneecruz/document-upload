@@ -118,7 +118,7 @@
     color: white;
     background-color: black;
     padding: 5px 10px;
-    border-radius: 0;
+    border-radius: 8px;
     border: 0;
     font-size: 14px;
   }
@@ -148,7 +148,13 @@
   }
   
   button.import-btn {
-    background-color: orange;
+    background-color: navy;
     margin-right: 20px;
   }
   
+  button.cancel-btn {
+    background-color: white;
+    color: orange;
+    border-radius: 8px;
+    border: 1px solid orange;
+  }
