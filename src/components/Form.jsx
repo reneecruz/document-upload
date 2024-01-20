@@ -1,26 +1,33 @@
 import React from "react";
 import "../styles.css";
 
-import FileUploader from "./FileUploader";
+import FileUpload from "./FileUpload";
 
 const Form = () => (
+
   <div class="form-container">
+
+
     <div class=" col-1">
-      <section>
-        {/* <label for="pet-select">Choose a pet:</label> */}
-        <select name="pets" id="pet-select">
-          <option value="">Select Import Name</option>
-          <option value="dog">Dog</option>
-          <option value="cat">Cat</option>
-          <option value="hamster">Hamster</option>
-          <option value="parrot">Parrot</option>
-          <option value="spider">Spider</option>
-          <option value="goldfish">Goldfish</option>
-        </select>
-      </section>
 
       <section>
-        <FileUploader />
+        {/* <label for="pet-select">Choose a pet:</label> */}
+      <div>
+
+        <select name="pets" id="pet-select">
+          <option value="">Select Import Name</option>
+          <option value="0">Dog</option>
+          <option value="1">Cat</option>
+          <option value="2">Hamster</option>
+          <option value="3">Parrot</option>
+          <option value="4">Spider</option>
+          <option value="5">Goldfish</option>
+        </select>
+        </div>
+      </section>
+
+      <section class="fileuploader">
+        <FileUpload />
       </section>
 
       <section>
@@ -94,14 +101,15 @@ const Form = () => (
         <div>
           <label>Testing Center 1</label>
           {/* <label for="pet-select">Choose a pet:</label> */}
+
           <select name="pets" id="pet-select">
             <option value="">Select Client</option>
-            <option value="dog">Dog</option>
-            <option value="cat">Cat</option>
-            <option value="hamster">Hamster</option>
-            <option value="parrot">Parrot</option>
-            <option value="spider">Spider</option>
-            <option value="goldfish">Goldfish</option>
+            <option value="0">Dog</option>
+            <option value="1">Cat</option>
+            <option value="2">Hamster</option>
+            <option value="3">Parrot</option>
+            <option value="4">Spider</option>
+            <option value="5">Goldfish</option>
           </select>
         </div>
 
@@ -120,9 +128,8 @@ const Form = () => (
         </div>
 
         <div>
-          <label>Testing Center 3</label>
-          {/* <label for="pet-select">Choose a pet:</label> */}
-          <select name="pets" id="pet-select">
+          <label for="testing-center-3-select">Testing Center 3</label>
+          <select name="testing-center-3-select" id="testing-center-3-select">
             <option value="">Select Client</option>
             <option value="dog">Dog</option>
             <option value="cat">Cat</option>
@@ -135,7 +142,7 @@ const Form = () => (
 
         <div>
           <label>Testing Center 4</label>
-          {/* <label for="pet-select">Choose a pet:</label> */}
+
           <select name="pets" id="pet-select">
             <option value="">Select Client</option>
             <option value="dog">Dog</option>
@@ -161,8 +168,13 @@ const Form = () => (
           <button class="cancel-btn">Cancel</button>
         </span>
       </div>
+   
     </section>
-  </div>
+
+    </div>
+
 );
+
+
 
 export default Form;

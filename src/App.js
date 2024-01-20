@@ -1,8 +1,7 @@
 import "./styles.css";
 import React from "react";
 
-import Form from "./components/Form.js";
-import FileUploader from "./components/FileUploader.js";
+import Form from "./components/Form.jsx";
 
 export default function App() {
   const onUpload = (files) => {
@@ -11,9 +10,15 @@ export default function App() {
 
   return (
     <div>
-      <h2>Document Upload</h2>
+
+     <div>
+
+    <header> 
+       <h2>Document Upload</h2>
+            <hr style={{ color: "grey" }} />
+                      </header>
+      </div>
       <Form onUpload={onUpload} />
-      <FileUploader onUpload={onUpload} />
     </div>
   );
 }
